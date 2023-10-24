@@ -1,93 +1,92 @@
 <html>
-        <head>
-                <meta charset="UTF-8">
-                <title>Leila's Personal Page</title>
-                <style>
-                        body {
-                                font-family: 'Arial', sans-serif;
-                                background-color: #f5f5f5;
-				padding: 20px;
-                        }
+    <head>
+        <meta charset="UTF-8">
+        <title>Leila's Personal Page</title>
+        <style>
+            body {
+                    font-family: 'Arial', sans-serif;
+                    background-color: #f5f5f5;
+				    padding: 20px;
+            }
 
-                        h1,
-			h2 {
-                                color: #333;
-                        }
+            h1,h2 {
+                    color: #333;
+            }
 
-                        p {
-                                font-size: 18px;
-                                color: #666;
-                        }
+            p {
+                    font-size: 18px;
+                    color: #666;
+            }
 
-                        .section {
-                                border: 1px solid #ccc;
-                                padding: 20px;
-				margin-top: 20px;
-                                border-radius: 8px;
-                                background-color: #ffffff;
-                                cursor: pointer;
-                        }
+            .section {
+                    border: 1px solid #ccc;
+                    padding: 20px;
+				    margin-top: 20px;
+                    border-radius: 8px;
+                    background-color: #ffffff;
+                    cursor: pointer;
+            }
 
-                        pre:hover {
-                                background-color: #e6e6e6;
-                        }
+            pre:hover {
+                    background-color: #e6e6e6;
+            }
 
-                        #animalimage {
-                                display: none;
-                                max-width: 200px;
-                                margin-top: 20px;
-                                border: 2px solid #000;
-                                width: 200px;
-                                height: auto;
-                        }
-                </style>
+            button {
+                    margin-bottom: 20px;
+            }
 
-        </head>
+            #animalimage {
+                    display: none;
+                    max-width: 200px;
+                    margin-top: 20px;
+                    border: 2px solid #000;
+                    width: 200px;
+                    height: auto;
+            }
+        </style>
+    </head>
 
-        <body>
-                <p>Welcome to Leila's Personal Page!</p>
-                <h2>Cat or Dog</h2>
+    <body>
+        <p>Welcome to Leila's Personal Page!</p>
+        <h2>Cat or Dog</h2>
 
-                <select id="animalselector">
-                        <option value=""> </option>
-                        <option value="cat">Cat</option>
-                        <option value="dog">Dog</option>
-                </select>
+        <select id="animalselector">
+            <option value=""> </option>
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+        </select>
 
-                <button onclick="showanimal()">Click!</button>
+        <button onclick="showanimal()" style="margin-bottom: 20px;">Click!</button>
 
-                <img id="animalimage" src="">
-                <audio id="animalsound" src=""></audio>
+        <img id="animalimage" src="">
 
-                <script>
-                        function showanimal(){
-                                var selector = document.getElementById('animalselector');
-                                var image = document.getElementById('animalimage');
-                                var sound = document.getElementById('animalsound');
+        <script>
+            function showanimal(){
+                var selector = document.getElementById('animalselector');
+                var image = document.getElementById('animalimage');
 
-                                if (selector.value == 'cat') {
-                                        image.src = 'https://media.tenor.com/Eiy9WdHo1WMAAAAd/%E5%B0%8F%E7%8C%AB%E5%90%83%E6%83%8A-what.gif';
-                                        sound.src = 'path_to_meow_sound.mp3';
-                                        image.style.display = 'block';
-                                        sound.play();
-                                } else if (selector.value == 'dog') {
-                                        image.src = 'https://imagepphcloud.thepaper.cn/pph/image/209/835/417.gif';
-                                        sound.src = 'path_to_bark_sound.mp3';
-                                        image.style.display = 'block';
-                                        sound.play();
-                                } else {
-                                        image.style.display = 'none';
-                                }
-                        }
-                </script>
+                if (selector.value == 'cat') {
+                    image.src = 'https://media.tenor.com/Eiy9WdHo1WMAAAAd/%E5%B0%8F%E7%8C%AB%E5%90%83%E6%83%8A-what.gif';
+                    image.style.display = 'block';
+                } else if (selector.value == 'dog') {
+                    image.src = 'https://imagepphcloud.thepaper.cn/pph/image/209/835/417.gif';
+                    image.style.display = 'block';
+                } else {
+                    image.style.display = 'none';
+                }
+            }
+        </script>
 
 		<form action="/submit" method="/post">
-			<label for="namefield">Name:</label>
+			<label for="namefield">Your Name:</label>
 			<input type="text" id="namefield" name="name">
-			<label for="agefield">Age:</label>
-			<input type="number" id="agefield" name="age">
+			<label for="animalpreference">Preferred Animal:</label>
+			<select id="animalpreference" name="animal">
+				<option value="Cat">Cat</option>
+				<option value="Dog">Dog</option>
+			</select>
 			<input type="submit" value="Submit">
 		</form>
 
-        </body>
+    </body>
 </html>

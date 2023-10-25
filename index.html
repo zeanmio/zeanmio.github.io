@@ -1,77 +1,48 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Leila's Personal Page</title>
-        <style>
-            body {
-                    font-family: 'Arial', sans-serif;
-                    background-color: #f5f5f5;
-				    padding: 20px;
-            }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leila Lin</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        img {
+            width: 200px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+        a {
+            color: #0099ff;
+            text-decoration: none;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
 
-            h2 {
-                    color: #333;
-            }
+    <img src="https://media.licdn.com/dms/image/D4E03AQEqsqW3H3mIwA/profile-displayphoto-shrink_800_800/0/1696845033921?e=1703721600&v=beta&t=Qx84eDewtx2Lh-fI6nVCQ2IrbYDqJnJHqFSUx_eI-U4" alt="Leila Lin">
+    
+    <h1>Leila Lin</h1>
+    <p>MSc Computing @ICL | MSc Health Economics and Decision Science @UCL | BSc Economics @UoL</p>
+    <p>London, England, United Kingdom</p>
 
-            p {
-                    font-size: 18px;
-                    color: #666;
-            }
+    <h2>Education</h2>
+    <ul>
+        <li>Imperial College London: Master of Science - MS, Computing</li>
+        <li>UCL: Master of Science - MS, Health Economics and Decision Science</li>
+        <li>The London School of Economics and Political Science (LSE): Summer School, Alternative Investments</li>
+        <li>University of Liverpool: Bachelor of Science - BS, Economics</li>
+        <li>Suzhou High School</li>
+    </ul>
 
-            .section {
-                    border: 1px solid #ccc;
-                    padding: 20px;
-				    margin-top: 20px;
-                    border-radius: 8px;
-                    background-color: #ffffff;
-                    cursor: pointer;
-            }
+    <a href="https://www.linkedin.com/in/leila-lin-1109/" target="_blank">LinkedIn</a>
+    <a href="mailto:leilalin119@gmail.com">Email</a>
 
-            pre:hover {
-                    background-color: #e6e6e6;
-            }
-
-            #animalimage {
-                    display: none;
-                    max-width: 200px;
-                    margin-top: 20px;
-                    border: 2px solid #000;
-                    width: 200px;
-                    height: auto;
-            }
-        </style>
-    </head>
-
-    <body>
-        <p>Welcome to Leila's Personal Page!</p>
-        <h2>Cat or Dog</h2>
-
-        <select id="animalselector">
-            <option value=""> </option>
-            <option value="cat">Cat</option>
-            <option value="dog">Dog</option>
-        </select>
-
-        <button onclick="showanimal()" style="margin-bottom: 20px;">Click!</button>
-
-        <img id="animalimage" src="">
-
-        <script>
-            function showanimal(){
-                var selector = document.getElementById('animalselector');
-                var image = document.getElementById('animalimage');
-
-                if (selector.value == 'cat') {
-                    image.src = 'https://media.tenor.com/Eiy9WdHo1WMAAAAd/%E5%B0%8F%E7%8C%AB%E5%90%83%E6%83%8A-what.gif';
-                    image.style.display = 'block';
-                } else if (selector.value == 'dog') {
-                    image.src = 'https://imagepphcloud.thepaper.cn/pph/image/209/835/417.gif';
-                    image.style.display = 'block';
-                } else {
-                    image.style.display = 'none';
-                }
-            }
-        </script>
-
-    </body>
+</body>
 </html>

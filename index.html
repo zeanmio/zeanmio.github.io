@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,7 +43,7 @@
         }
 
         ul {
-            text-align: left;
+            list-style-type: none; 
         }
 
         h3 {
@@ -61,11 +62,19 @@
         footer {
             margin-top: 50px;
         }
+
+        .centered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
     </style>
 </head>
 
 <body>
 
+    <div class="centered">
     <img src="https://media.licdn.com/dms/image/D4E03AQEqsqW3H3mIwA/profile-displayphoto-shrink_800_800/0/1696845033921?e=1703721600&v=beta&t=Qx84eDewtx2Lh-fI6nVCQ2IrbYDqJnJHqFSUx_eI-U4" alt="Leila Lin">
     
     <h1>Leila Lin</h1>
@@ -74,9 +83,9 @@
     <div class="section">
         <h3>Education</h3>
         <ul>
-            <p>Master of Science in Computing @ Imperial College London</p>
-            <p>Master of Science in Health Economics and Decision Science @ University College London</p>
-            <p>Bachelor of Science in Economics @ University of Liverpool</p>
+            <li>Master of Science in Computing @ Imperial College London</li>
+            <li>Master of Science in Health Economics and Decision Science @ University College London</li>
+            <li>Bachelor of Science in Economics @ University of Liverpool</li>
         </ul>
     </div>
 
@@ -111,6 +120,7 @@
     <footer>
         <p>© 2023 Leila Lin</p>
     </footer>
+</div>
 
 </body>
 </html>

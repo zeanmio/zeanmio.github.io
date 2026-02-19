@@ -1,8 +1,53 @@
 <!doctype html>
-<html>
-  <head><meta charset="utf-8"><title>Test</title></head>
-  <body>
-    <h1>Hello, zeanmio.github.io is updated ✅</h1>
-    <p>If you can see this, GitHub Pages is serving the correct index.html.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leila Lin</title>
+  <meta name="description" content="Leila Lin — Computing, ML/CV, data systems." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1>Leila Lin</h1>
+      <p class="subtitle">MSc Computing @ Imperial College London</p>
+      <p class="links">
+        <a href="https://github.com/zeanmio" target="_blank" rel="noreferrer">GitHub</a>
+        <span>·</span>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <span>·</span>
+        <a href="mailto:your@email.com">Email</a>
+      </p>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        Quantitative researcher and analyst with dual Master’s training in Computing and Health Economics.
+        Interested in machine learning, computer vision, and building data-driven systems.
+      </p>
+    </section>
+
+    <section>
+      <h2>Selected Work</h2>
+      <div class="card">
+        <h3>EdgeMedSAM</h3>
+        <p>Efficient SAM-based medical image segmentation: benchmarking and parameter-efficient adaptation.</p>
+      </div>
+      <div class="card">
+        <h3>Multilingual Company Website</h3>
+        <p>Building a multilingual website and internal data workflows for a global, online-first business.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="y"></span> Leila Lin</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>

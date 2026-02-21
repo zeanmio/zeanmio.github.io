@@ -405,7 +405,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header {
     background:
-        linear-gradient(90deg, rgba(0,0,0,.80) 0%, rgba(0,0,0,.55) 45%, rgba(0,0,0,.75) 100%),
+        linear-gradient(90deg, rgba(0,0,0,.45) 0%, rgba(0,0,0,.28) 45%, rgba(0,0,0,.40) 100%),
         url('./images/header.jpg');
     height: 100vh;
     background-size: cover;
@@ -663,4 +663,165 @@ body:not(.user-is-tabbing) a:focus {
     .footer {
         padding: var(--gutter-medium) 0;
     } 
+}
+
+/* ----- Education Timeline ----- */
+
+.vtimeline{
+  position: relative;
+  margin-top: var(--gutter-medium);
+  padding: 2rem 0;
+}
+
+.vtimeline::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,.14);
+}
+
+.vtimeline__item{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 7rem 1fr;
+  grid-template-areas: "date icon content";
+  column-gap: 3.2rem;
+  align-items: center;
+  margin: 0 0 5.5rem;
+}
+
+.vtimeline__date{
+  grid-area: date;
+  font-family: 'Jost', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: .02em;
+  opacity: .75;
+  margin-top: 0;
+  align-self: center;
+  justify-self: end;
+  text-align: right;
+}
+
+.vtimeline__icon{
+  grid-area: icon;
+  position: relative;
+  width: 7rem;
+  height: 7rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.vtimeline__icon::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: rgba(0,0,0,.35);
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow: 0 20px 60px rgba(0,0,0,.35);
+}
+
+.vtimeline__icon img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 1.4rem;
+  object-fit: contain;
+  filter: none;
+  opacity: 1;
+}
+
+.vtimeline__content{
+  grid-area: content;
+  padding: 2.2rem 2.4rem;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(0,0,0,.18);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 18px 50px rgba(0,0,0,.28);
+}
+
+.vtimeline__title{
+  margin: 0;
+}
+
+.vtimeline__meta{
+  margin: .5rem 0 0;
+  opacity: .85;
+  font-size: 1.7rem;
+}
+
+.vtimeline__body{
+  margin-top: 1.2rem;
+  opacity: .9;
+  max-width: 88ch;
+}
+
+/* right side swaps layout so date stays aligned with icon */
+.vtimeline__item--right{
+  grid-template-areas: "content icon date";
+}
+
+.vtimeline__item--right .vtimeline__date{
+  justify-self: start;
+  text-align: left;
+}
+
+.vtimeline__item--right .vtimeline__content{
+  justify-self: end;
+}
+
+.vtimeline__item:hover .vtimeline__content{
+  border-color: rgba(58,140,140,.45);
+  transform: translateY(-2px);
+  transition: .2s ease;
+}
+
+/* Mobile */
+@media(max-width: 900px){
+  .vtimeline::before{
+    left: 2.2rem;
+    transform: none;
+  }
+
+  .vtimeline__item{
+    grid-template-columns: 4.4rem 1fr;
+    grid-template-areas:
+      "icon date"
+      "icon content";
+    column-gap: 1.8rem;
+    align-items: start;
+  }
+
+  .vtimeline__date{
+    justify-self: start;
+    text-align: left;
+  }
+
+  .vtimeline__icon{
+    width: 4.4rem;
+    height: 4.4rem;
+    margin-top: .2rem;
+  }
+
+  .vtimeline__icon img{
+    padding: .9rem;
+  }
+
+  .vtimeline__content{
+    padding: 2rem 1.8rem;
+  }
+
+  .vtimeline__item--right{
+    grid-template-areas:
+      "icon date"
+      "icon content";
+  }
+
+  .vtimeline__item--right .vtimeline__content{
+    justify-self: start;
+  }
 }

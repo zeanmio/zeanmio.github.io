@@ -1,53 +1,259 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Leila Lin</title>
-  <meta name="description" content="Leila Lin — Computing, ML/CV, data systems." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="./images/favicon.png" rel="shortcut icon" type="image/png"/>
+  <title> Leila Lin </title>
+  <meta name="description" content="Leila Lin — A quantitative researcher bridging Computing, Finance, and Health Economics." />
+  <meta name="keywords" content="Leila Lin, Xinyi Lin, quantitative researcher, data analyst, software engineer, computing, finance, economics, health economics, machine learning, computer vision, medical imaging, Python, C++, Java, SQL" />
+  <link href="index.css" rel="stylesheet"/>
 </head>
+
 <body>
-  <main class="container">
-    <header class="hero">
-      <h1>Leila Lin</h1>
-      <p class="subtitle">MSc Computing @ Imperial College London</p>
-      <p class="links">
-        <a href="https://github.com/zeanmio" target="_blank" rel="noreferrer">GitHub</a>
-        <span>·</span>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <span>·</span>
-        <a href="mailto:your@email.com">Email</a>
-      </p>
-    </header>
 
-    <section>
-      <h2>About</h2>
-      <p>
-        Quantitative researcher and analyst with dual Master’s training in Computing and Health Economics.
-        Interested in machine learning, computer vision, and building data-driven systems.
-      </p>
-    </section>
+<!-- ***** Header ***** -->
 
-    <section>
-      <h2>Selected Work</h2>
-      <div class="card">
-        <h3>EdgeMedSAM</h3>
-        <p>Efficient SAM-based medical image segmentation: benchmarking and parameter-efficient adaptation.</p>
+<header class="header" id="top" role="banner">
+  <div class="row">
+    <nav class="nav" role="navigation">
+      <ul class="nav__items">
+        <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+        <li class="nav__item"><a class="nav__link" href="#education">Education</a></li>
+        <li class="nav__item"><a class="nav__link" href="#work">Work</a></li>
+        <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="header__text-box row">
+    <div class="header__content">
+      <div class="header__photo">
+        <img src="./images/profile-1.jpg" alt="Photo of Leila Lin" />
       </div>
-      <div class="card">
-        <h3>Multilingual Company Website</h3>
-        <p>Building a multilingual website and internal data workflows for a global, online-first business.</p>
+
+      <div class="header__text">
+        <h1 class="heading-primary"><span>Leila Lin</span></h1>
+        <p>A quantitative researcher bridging Computing, Finance, and Health Economics.</p>
       </div>
-    </section>
+    </div>
+  </div>
+</header>
+<main role="main">
 
-    <footer class="footer">
-      <p>© <span id="y"></span> Leila Lin</p>
-    </footer>
-  </main>
+<!-- ***** About ***** -->
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+<section class="about" id="about">
+  <div class="row">
+    <h2>About</h2>
+    <div class="about__content">
+      <div class="about__photo-container">
+        <img class="about__photo" src="./images/profile-2.jpg" alt="Photo of Leila Lin" />
+      </div>
+
+      <div class="about__text">
+        <p>
+            I'm Leila Lin, also known as Xinyi Lin, a quantitative researcher and data analyst with a strong academic background in computing, finance, medical statistics, and health economics, supported by dual Master's training in Computing and Health Economics.
+        </p>
+        <p>
+            My recent work includes a computer vision and machine learning project involving the development and evaluation of efficient, transformer-based deep-learning models for medical image segmentation, and a quantitative population health research project conducting cross-country and longitudinal analysis of large-scale survey data to inform health system governance and policy-relevant decision-making.
+        </p>
+        <p>
+          Alongside research, I'm building a venture in the jewellery and equipment industry, exploring how traditional Chinese businesses can modernise and scale globally through a digital-first operating model. I’m developing an end-to-end platform—from product discovery and enquiries to structured product data, inventory, logistics, and reporting—with a focus on systems that make decision-making measurable, repeatable, and scalable.
+        </p>
+        <p>
+          Outside of work, I enjoy travelling, photography, and exploring the outdoors—surfing in summer, snowboarding in winter, and taking my two cats along for hikes.
+        </p>
+      </div>
+    </div>
+
+    <div class="about__cta">
+      <a class="btn" href="CV.pdf" rel="noopener noreferrer" target="_blank">Download CV</a>
+    </div>
+  </div>
+</section>
+
+<!-- ***** Education ***** -->
+
+<section class="work" id="education">
+<div class="row">
+<h2>Education</h2>
+<div class="work__boxes">
+<div class="work__box">
+<div class="work__text">
+<h3>Imperial College London — MSc Computing</h3>
+<p>
+            Graduated with Distinction, ranking in the top 1% of the cohort.
+            Built a strong foundation in object-oriented design and software engineering, and delivered full-stack web applications across multiple projects.
+          </p>
+<ul class="work__list">
+<li>Sep 2023 – Sep 2025</li>
+<li>London, UK</li>
+</ul>
+</div>
+<div class="work__image-box">
+<img alt="Imperial College London" class="work__image" src="./images/header.jpg"/>
+</div>
+</div>
+<div class="work__box">
+<div class="work__text">
+<h3>University College London — MSc Health Economics &amp; Decision Science</h3>
+<p>
+            Graduated with Distinction; ranked 1st in the cohort; awarded Dean’s List.
+            Developed rigorous foundations in health economics and medical statistics, and applied econometric and statistical modelling to real-world health data.
+          </p>
+<ul class="work__list">
+<li>Sep 2022 – Sep 2023</li>
+<li>London, UK</li>
+</ul>
+</div>
+<div class="work__image-box">
+<img alt="University College London" class="work__image" src="./images/header.jpg"/>
+</div>
+</div>
+<div class="work__box">
+<div class="work__text">
+<h3>University of Liverpool — BSc Economics (Finance)</h3>
+<p>
+            Graduated with First Class Honours, ranking in the top 1% of the cohort.
+            Advanced training in microeconomics, macroeconomics, econometrics, and time-series analysis; specialised in finance with a focus on markets and asset pricing.
+          </p>
+<ul class="work__list">
+<li>Sep 2018 – Jun 2022</li>
+<li>Liverpool, UK</li>
+</ul>
+</div>
+<div class="work__image-box">
+<img alt="University of Liverpool" class="work__image" src="./images/header.jpg"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ***** Work ***** -->
+ 
+<section class="work" id="work">
+<div class="row">
+<h2>Work</h2>
+<div class="work__boxes">
+<div class="work__box">
+<div class="work__text">
+<h3>EdgeMedSAM</h3>
+<p>
+                Efficient SAM-based medical image segmentation: large-scale accuracy–efficiency benchmarking and
+                parameter-efficient adaptation tailored to medical imaging.
+              </p>
+<ul class="work__list">
+<li>PyTorch</li>
+<li>Computer Vision</li>
+<li>Medical Imaging</li>
+<li>Benchmarking</li>
+</ul>
+<div class="work__links">
+<a class="link__text" href="CV.pdf" rel="noopener noreferrer" target="_blank">
+                  See details in CV <span>→</span>
+</a>
+</div>
+</div>
+<div class="work__image-box">
+<img alt="EdgeMedSAM project preview" class="work__image" src="./images/project-1.png"/>
+</div>
+</div>
+<div class="work__box">
+<div class="work__text">
+<h3>Quality of Care Network (QCN) Evaluation</h3>
+<p>
+                Cross-country and longitudinal quantitative evaluation using multi-wave survey data.
+                Validated measurement frameworks and modelled temporal variation to generate policy-relevant insights.
+              </p>
+<ul class="work__list">
+<li>Econometrics</li>
+<li>Regression</li>
+<li>CFA</li>
+<li>R / Stata</li>
+</ul>
+<div class="work__links">
+<a class="link__text" href="CV.pdf" rel="noopener noreferrer" target="_blank">
+                  See details in CV <span>→</span>
+</a>
+</div>
+</div>
+<div class="work__image-box">
+<img alt="QCN evaluation project preview" class="work__image" src="./images/project-2.png"/>
+</div>
+</div>
+<div class="work__box">
+<div class="work__text">
+<h3>KYG Machinery UK — Product &amp; Data Workflows</h3>
+<p>
+                Designed and built an end-to-end marketing site with a searchable product catalogue and enquiry flow,
+                plus internal pipelines for product records, inventory updates, and shipment status tracking.
+              </p>
+<ul class="work__list">
+<li>HTML/CSS/JS</li>
+<li>React</li>
+<li>SQL</li>
+<li>Azure / Cloudflare</li>
+</ul>
+<div class="work__links">
+<a class="link__text" href="mailto:leilalin119@gmail.com">
+                  Ask for a demo <span>→</span>
+</a>
+</div>
+</div>
+<div class="work__image-box">
+<img alt="Product website project preview" class="work__image" src="./images/project-3.png"/>
+</div>
+</div>
+</div>
+</div>
+</section><section class="contact" id="contact">
+<div class="row">
+<h2>Get in Touch</h2>
+<div class="contact__info">
+<p>
+        If you'd like to collaborate (ML/CV, medical imaging, data systems) or chat about research and engineering projects,
+        feel free to reach out. The quickest way to contact me is by email.
+      </p>
+<a class="btn" href="mailto:leilalin119@gmail.com">leilalin119@gmail.com</a>
+<p style="margin-top:1.6rem; opacity:.8">
+        LinkedIn: <a href="https://www.linkedin.com/in/leila-lin-1109/" rel="noopener noreferrer" target="_blank">leila-lin-1109</a>
+        · GitHub: <a href="https://github.com/zeanmio" rel="noopener noreferrer" target="_blank">zeanmio</a>
+</p>
+</div>
+</div>
+</section></main>
+<!-- ***** Contact ***** -->
+
+<!-- ***** Footer ***** -->
+<footer class="footer" role="contentinfo">
+<div class="row">
+<ul class="footer__social-links">
+<li class="footer__social-link-item">
+<a href="https://github.com/zeanmio" rel="noopener noreferrer" target="_blank" title="GitHub">
+<img alt="GitHub" class="footer__social-image" src="./images/github.svg"/>
+</a>
+</li>
+<li class="footer__social-link-item">
+<a href="https://www.linkedin.com/in/leila-lin-1109/" rel="noopener noreferrer" target="_blank" title="LinkedIn">
+<img alt="LinkedIn" class="footer__social-image" src="./images/linkedin.svg"/>
+</a>
+</li>
+<li class="footer__social-link-item">
+<a href="mailto:leilalin119@gmail.com" title="Email">
+<span style="font-size:1.4rem; border-bottom:1px solid transparent">Email</span>
+</a>
+</li>
+</ul>
+<p style="margin-top:1.4rem; opacity:.8">© <span id="year"></span> Leila Lin</p>
+</div>
+</footer>
+<a class="back-to-top" href="#top" title="Back to Top">
+<img alt="Back to Top" class="back-to-top__image" src="./images/arrow-up.svg">
+</img></a>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="./index.js"></script>
 </body>
 </html>

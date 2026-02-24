@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <link href="./images/favicon.png" rel="shortcut icon" type="image/png"/>
   <title> Leila Lin </title>
-  <meta name="description" content="Leila Lin — A quantitative researcher bridging Computing, Finance, and Health Economics." />
+  <meta name="description" content="Leila Lin - A quantitative researcher bridging Computing, Finance, and Health Economics." />
   <meta name="keywords" content="Leila Lin, Xinyi Lin, quantitative researcher, data analyst, software engineer, computing, finance, economics, health economics, machine learning, computer vision, medical imaging, Python, C++, Java, SQL" />
   <link href="index.css" rel="stylesheet"/>
 </head>
@@ -49,7 +49,16 @@
     <h2>About</h2>
     <div class="about__content">
       <div class="about__photo-container">
-        <img class="about__photo" src="./images/profile-2.jpg" alt="Photo of Leila Lin" />
+        <div class="about__carousel" data-carousel>
+          <div class="about__carousel-track">
+            <img class="about__photo is-active" src="./images/profile-2.jpg" alt="Photo of Leila Lin 1" loading="lazy" data-carousel-slide />
+            <img class="about__photo" src="./images/profile-3.jpg" alt="Photo of Leila Lin 2" loading="lazy" data-carousel-slide />
+          </div>
+          <div class="about__carousel-controls">
+            <button class="about__carousel-btn" type="button" data-carousel-prev aria-label="Previous photo">&lsaquo;</button>
+            <button class="about__carousel-btn" type="button" data-carousel-next aria-label="Next photo">&rsaquo;</button>
+          </div>
+        </div>
       </div>
 
       <div class="about__text">
@@ -60,10 +69,10 @@
             My recent work includes a computer vision and machine learning project involving the development and evaluation of efficient, transformer-based deep-learning models for medical image segmentation, and a quantitative population health research project conducting cross-country and longitudinal analysis of large-scale survey data to inform health system governance and policy-relevant decision-making.
         </p>
         <p>
-          Alongside research, I'm building a venture in the jewellery and equipment industry, exploring how traditional Chinese businesses can modernise and scale globally through a digital-first operating model. I’m developing an end-to-end platform—from product discovery and enquiries to structured product data, inventory, logistics, and reporting—with a focus on systems that make decision-making measurable, repeatable, and scalable.
+          Alongside research, I'm building a venture in the jewellery and equipment industry, exploring how traditional Chinese businesses can modernise and scale globally through a digital-first operating model. I'm developing an end-to-end platform - from product discovery and enquiries to structured product data, inventory, logistics, and reporting - with a focus on systems that make decision-making measurable, repeatable, and scalable.
         </p>
         <p>
-          Outside of work, I enjoy travelling, photography, and exploring the outdoors—surfing in summer, snowboarding in winter, and taking my two cats along for hikes.
+          Outside of work, I enjoy travelling, photography, and exploring the outdoors - surfing in summer, snowboarding in winter, and taking my two cats along for hikes.
         </p>
       </div>
     </div>
@@ -85,74 +94,72 @@
       <article class="vtimeline__item vtimeline__item--left">
         <div class="vtimeline__date">2023-2025</div>
         <div class="vtimeline__icon" aria-hidden="true">
-          <img src="./images/edu/imperial.png" alt="Imperial College London" />
+          <img src="./images/edu/imperial.png" alt="Imperial College London" loading="lazy" />
         </div>
         <div class="vtimeline__content">
           <h3 class="vtimeline__title">Imperial College London</h3>
-          <p class="vtimeline__meta"><strong>MSc Computing · Distinction</strong></p>
+          <p class="vtimeline__meta"><strong>MSc Computing | Distinction</strong></p>
         </div>
       </article>
 
       <article class="vtimeline__item vtimeline__item--right">
         <div class="vtimeline__date">2022-2023</div>
         <div class="vtimeline__icon" aria-hidden="true">
-          <img src="./images/edu/ucl.png" alt="University College London" />
+          <img src="./images/edu/ucl.png" alt="University College London" loading="lazy" />
         </div>
         <div class="vtimeline__content">
           <h3 class="vtimeline__title">University College London</h3>
-          <p class="vtimeline__meta"><strong>MSc Health Economics &amp; Decision Science · Distinction</strong></p>
+          <p class="vtimeline__meta"><strong>MSc Health Economics &amp; Decision Science | Distinction</strong></p>
         </div>
       </article>
 
       <article class="vtimeline__item vtimeline__item--left">
         <div class="vtimeline__date">2020-2022</div>
         <div class="vtimeline__icon" aria-hidden="true">
-          <img src="./images/edu/liverpool.png" alt="University of Liverpool" />
+          <img src="./images/edu/liverpool.png" alt="University of Liverpool" loading="lazy" />
         </div>
         <div class="vtimeline__content">
           <h3 class="vtimeline__title">University of Liverpool</h3>
-          <p class="vtimeline__meta"><strong>BSc Economics · First Class Degree</strong></p>
+          <p class="vtimeline__meta"><strong>BSc Economics | First Class Degree</strong></p>
         </div>
       </article>
 
       <article class="vtimeline__item vtimeline__item--right">
         <div class="vtimeline__date">2021</div>
         <div class="vtimeline__icon" aria-hidden="true">
-          <img src="./images/edu/lse.png" alt="London School of Economics" />
+          <img src="./images/edu/lse.png" alt="London School of Economics" loading="lazy" />
         </div>
         <div class="vtimeline__content">
           <h3 class="vtimeline__title">London School of Economics</h3>
-          <p class="vtimeline__meta"><strong>Summer School · Alternative Investments · A+</strong></p>
+          <p class="vtimeline__meta"><strong>Summer School | Alternative Investments | A+</strong></p>
         </div>
       </article>
 
       <article class="vtimeline__item vtimeline__item--left">
         <div class="vtimeline__date">2018-2020</div>
         <div class="vtimeline__icon" aria-hidden="true">
-          <img src="./images/edu/xjtlu.png" alt="Xi'an Jiaotong-Liverpool University" />
+          <img src="./images/edu/xjtlu.png" alt="Xi'an Jiaotong-Liverpool University" loading="lazy" />
         </div>
         <div class="vtimeline__content">
           <h3 class="vtimeline__title">Xi'an Jiaotong-Liverpool University</h3>
-          <p class="vtimeline__meta"><strong>BSc Economics &amp; Finance · First Class Degree</strong></p>
+          <p class="vtimeline__meta"><strong>BSc Economics &amp; Finance | First Class Degree</strong></p>
         </div>
       </article>
 
       <article class="vtimeline__item vtimeline__item--right">
         <div class="vtimeline__date">2015-2018</div>
         <div class="vtimeline__icon" aria-hidden="true">
-          <img src="./images/edu/shs.png" alt="Suzhou High School" />
+          <img src="./images/edu/shs.png" alt="Suzhou High School" loading="lazy" />
         </div>
         <div class="vtimeline__content">
           <h3 class="vtimeline__title">Suzhou High School</h3>
-          <p class="vtimeline__meta"><strong>High School Diploma · General Studies</strong></p>
+          <p class="vtimeline__meta"><strong>High School Diploma | General Studies</strong></p>
         </div>
       </article>
 
     </div>
   </div>
 </section>
-
-<!-- ***** Work ***** -->
  
 <!-- ***** Work ***** -->
 
@@ -162,91 +169,106 @@
 
     <div class="work__boxes">
 
-      <div class="work__box">
-        <div class="work__text">
-          <h3>EdgeMedSAM — Efficient SAM Adaptation for Medical Image Segmentation</h3>
+      <div class="work__box work__box--featured">
+        <h3 class="work__title">Company Website</h3>
+        <div class="work__body">
+          <div class="work__text">
+            <ul class="work__summary">
+              <li>Built the site in Astro with a clean, maintainable structure.</li>
+              <li>Developed a categorised product catalogue with search.</li>
+              <li>Implemented an enquiry flow to capture and route product requests.</li>
+              <li>Deployed on Cloudflare Pages with SEO essentials and enquiry conversion tracking.</li>
+            </ul>
 
-          <p>
-            Conducted a large-scale accuracy–efficiency benchmark of SAM-family models across 8 medical imaging modalities,
-            and proposed EdgeMedSAM, a parameter-efficient adaptation of EdgeSAM for medical image segmentation.
-            Achieved state-of-the-art accuracy–efficiency trade-offs on multiple external datasets with a compact model footprint
-            and faster inference.
-          </p>
-
-          <ul class="work__list">
-            <li>PyTorch</li>
-            <li>Computer Vision</li>
-            <li>Medical Imaging</li>
-            <li>Benchmarking</li>
-          </ul>
-
-          <div class="work__links">
-            <a class="link__text" href="https://gitlab.doc.ic.ac.uk/xl6423/edgemedsam" target="_blank" rel="noopener noreferrer">
-              Visit site <span>→</span>
-            </a>
+            <div class="work__links">
+              <span class="work__links-label">Visit site:</span>
+              <a class="link__text" href="https://kygmachinery.com" target="_blank" rel="noopener noreferrer">
+                UK (KYG) <span aria-hidden="true">&rarr;</span>
+              </a>
+              <a class="link__text" href="https://saneibkk.com" target="_blank" rel="noopener noreferrer">
+                TH (SANEI) <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="work__image-box">
-          <img class="work__image" src="./images/project-1.png" alt="EdgeMedSAM project preview" />
+          <div class="work__image-box">
+            <div class="work__carousel" data-carousel>
+              <div class="work__carousel-track">
+                <img class="work__image is-active" src="./images/project-3-1.png" alt="Company website preview 1" loading="lazy" data-carousel-slide />
+                <img class="work__image" src="./images/project-3-2.png" alt="Company website preview 2" loading="lazy" data-carousel-slide />
+              </div>
+              <div class="work__carousel-controls">
+                <button class="work__carousel-btn work__carousel-btn--prev" type="button" data-carousel-prev aria-label="Previous image">&lsaquo;</button>
+                <button class="work__carousel-btn work__carousel-btn--next" type="button" data-carousel-next aria-label="Next image">&rsaquo;</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="work__box">
-        <div class="work__text">
-          <h3>Quantitative Evaluation of the Quality of Care Network (QCN)</h3>
+      <div class="work__box work__box--featured">
+        <h3 class="work__title">EdgeMedSAM - Efficient SAM Adaptation for Medical Image Segmentation</h3>
+        <div class="work__body">
+          <div class="work__text">
 
-          <p>
-            Performed cross-country and longitudinal quantitative evaluation using multi-wave survey data.
-            Validated measurement frameworks via confirmatory factor analysis and reliability testing,
-            and modelled cross-country and temporal variation using multivariable regression to generate policy-relevant insights.
-            Part of a UKRI-funded project led by UCL; manuscript under review at <em>BMC Health Services Research</em>.
-          </p>
+            <ul class="work__summary">
+              <li>Conducted a large-scale accuracy&ndash;efficiency benchmark of SAM (Segment Anything Model) family models across 8 medical imaging modalities.</li>
+              <li>Proposed EdgeMedSAM, a parameter-efficient medical adaptation of EdgeSAM for high-performance medical image segmentation.</li>
+              <li>Achieved state-of-the-art accuracy&ndash;efficiency trade-offs on multiple external datasets, delivering fast inference, strong segmentation accuracy, and a compact model footprint.</li>
+            </ul>
 
-          <ul class="work__list">
-            <li>Econometrics</li>
-            <li>Confirmatory Factor Analysis</li>
-            <li>Multivariable Regression</li>
-            <li>R / Stata</li>
-          </ul>
-
-          <div class="work__links">
-            <a class="link__text" href="https://www.ucl.ac.uk/population-health-sciences/qcn-evaluation" target="_blank" rel="noopener noreferrer">
-              Visit site <span>→</span>
-            </a>
+            <div class="work__links">
+              <a class="link__text" href="https://gitlab.doc.ic.ac.uk/xl6423/edgemedsam" target="_blank" rel="noopener noreferrer">
+                Visit site <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="work__image-box">
-          <img class="work__image" src="./images/project-2.png" alt="QCN evaluation project preview" />
+          <div class="work__image-box">
+            <div class="work__carousel" data-carousel>
+              <div class="work__carousel-track">
+                <img class="work__image is-active" src="./images/project-1-1.png" alt="EdgeMedSAM project preview 1" loading="lazy" data-carousel-slide />
+                <img class="work__image" src="./images/project-1-2.png" alt="EdgeMedSAM project preview 2" loading="lazy" data-carousel-slide />
+              </div>
+              <div class="work__carousel-controls">
+                <button class="work__carousel-btn work__carousel-btn--prev" type="button" data-carousel-prev aria-label="Previous image">&lsaquo;</button>
+                <button class="work__carousel-btn work__carousel-btn--next" type="button" data-carousel-next aria-label="Next image">&rsaquo;</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="work__box">
-        <div class="work__text">
-          <h3>KYG Machinery UK — Company Website &amp; Digital Workflows</h3>
+      <div class="work__box work__box--featured">
+        <h3 class="work__title">Quantitative Evaluation of the Quality of Care Network (QCN)</h3>
+        <div class="work__body">
+          <div class="work__text">
+            <ul class="work__summary">
+              <li>Conducted a cross-country and longitudinal quantitative evaluation using multi-wave QCN survey data.</li>
+              <li>Designed and validated measurement frameworks using confirmatory factor analysis and reliability testing.</li>
+              <li>Modelled cross-country and temporal variation in stakeholder perceptions using multivariable regression.</li>
+              <li>Generated policy-relevant evidence to inform the governance and scaling of global maternal and child health networks.</li>
+              <li>Part of a UKRI-funded project led by UCL; manuscript under review at <em>BMC Health Services Research</em>.</li>
+            </ul>
 
-          <p>
-            Building a company website and a searchable product catalogue for enquiries, alongside internal workflows for structured product data,
-            inventory, logistics updates, and reporting—designed to support measurable, repeatable, and scalable decision-making.
-          </p>
-
-          <ul class="work__list">
-            <li>Website (HTML/CSS/JS)</li>
-            <li>Search &amp; Enquiry Flow</li>
-            <li>Product Data &amp; Operations</li>
-            <li>Cloud Deployment</li>
-          </ul>
-
-          <div class="work__links">
-            <a class="link__text" href="#" aria-disabled="true" style="opacity:.6; cursor:not-allowed;">
-              Coming soon <span>→</span>
-            </a>
+            <div class="work__links">
+              <a class="link__text" href="https://www.ucl.ac.uk/population-health-sciences/qcn-evaluation" target="_blank" rel="noopener noreferrer">
+                Visit site <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="work__image-box">
-          <img class="work__image" src="./images/project-3.png" alt="Company website work preview" />
+          <div class="work__image-box">
+            <div class="work__carousel" data-carousel>
+              <div class="work__carousel-track">
+                <img class="work__image is-active" src="./images/project-2.png" alt="QCN evaluation project preview" loading="lazy" data-carousel-slide />
+              </div>
+              <div class="work__carousel-controls">
+                <button class="work__carousel-btn work__carousel-btn--prev" type="button" data-carousel-prev aria-label="Previous image">&lsaquo;</button>
+                <button class="work__carousel-btn work__carousel-btn--next" type="button" data-carousel-next aria-label="Next image">&rsaquo;</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -273,31 +295,31 @@
 
 <!-- ***** Footer ***** -->
 <footer class="footer" role="contentinfo">
-<div class="row">
-<ul class="footer__social-links">
-<li class="footer__social-link-item">
-<a href="https://github.com/zeanmio" rel="noopener noreferrer" target="_blank" title="GitHub">
-<img alt="GitHub" class="footer__social-image" src="./images/github.svg"/>
-</a>
-</li>
-<li class="footer__social-link-item">
-<a href="https://www.linkedin.com/in/leila-lin-1109/" rel="noopener noreferrer" target="_blank" title="LinkedIn">
-<img alt="LinkedIn" class="footer__social-image" src="./images/linkedin.svg"/>
-</a>
-</li>
-<li class="footer__social-link-item">
-<a href="mailto:leilalin119@gmail.com" title="Email">
-<span style="font-size:1.4rem; border-bottom:1px solid transparent">Email</span>
-</a>
-</li>
-</ul>
-<p style="margin-top:1.4rem; opacity:.8">© <span id="year"></span> Leila Lin</p>
-</div>
+  <div class="row">
+    <ul class="footer__social-links">
+      <li class="footer__social-link-item">
+        <a href="https://github.com/zeanmio" rel="noopener noreferrer" target="_blank" title="GitHub">
+          <img alt="GitHub" class="footer__social-image" src="./images/github.svg"/>
+        </a>
+      </li>
+
+      <li class="footer__social-link-item">
+        <a href="https://www.linkedin.com/in/leila-lin-1109/" rel="noopener noreferrer" target="_blank" title="LinkedIn">
+          <img alt="LinkedIn" class="footer__social-image" src="./images/linkedin.svg"/>
+        </a>
+      </li>
+    </ul>
+
+    <p style="margin-top:1.4rem; opacity:.8">&copy; <span id="year"></span> Leila Lin</p>
+  </div>
 </footer>
+
 <a class="back-to-top" href="#top" title="Back to Top">
-<img alt="Back to Top" class="back-to-top__image" src="./images/arrow-up.svg">
-</img></a>
+  <img alt="Back to Top" class="back-to-top__image" src="./images/arrow-up.svg" loading="lazy" />
+</a>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 <script src="./index.js"></script>
+
 </body>
+
 </html>

@@ -598,6 +598,12 @@ body:not(.user-is-tabbing) a:focus {
   .about__photo{
     max-width: 420px;
   }
+
+  .about__carousel-controls{
+    left: 0;
+    width: 100%;
+    padding: 0 .4rem;
+  }
 }
 
 /* --------------------------------------- */
